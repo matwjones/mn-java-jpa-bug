@@ -32,7 +32,7 @@ dependencies {
     implementation("io.micronaut.configuration:micronaut-jdbc-tomcat")
     implementation("io.micronaut.data:micronaut-data-hibernate-jpa")
     runtimeOnly("ch.qos.logback:logback-classic:1.2.3")
-    runtimeOnly("com.h2database:h2")
+    runtimeOnly('org.postgresql:postgresql:42.2.12')
     testAnnotationProcessor(enforcedPlatform("io.micronaut:micronaut-bom:$micronautVersion"))
     testAnnotationProcessor("io.micronaut:micronaut-inject-java")
     testImplementation(enforcedPlatform("io.micronaut:micronaut-bom:$micronautVersion"))

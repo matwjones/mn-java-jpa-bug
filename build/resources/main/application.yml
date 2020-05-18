@@ -1,0 +1,12 @@
+micronaut:
+  application:
+    name: mnJavaJpaBug
+datasources:
+  default:
+    url: ${JDBC_URL:`jdbc:postgresql://localhost:5432/registration`}
+    username: ${JDBC_USER:postgres}
+    password: ${JDBC_PASSWORD:postgres}
+    driverClassName: ${JDBC_DRIVER:org.postgresql.Driver}
+    schema-generate: CREATE_DROP
+    dialect: POSTGRES
+jpa.default.properties.hibernate.hbm2ddl.auto: update
